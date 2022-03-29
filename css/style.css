@@ -14,7 +14,8 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/pic.jpeg);
     background-size: cover;
     background-position: center;
-    cursor: move
+    cursor: move;
+    overflow:hidden !important
 }
 
 #hero #drone-box {
