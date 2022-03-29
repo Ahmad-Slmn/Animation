@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="discription" content="js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <!-- My Main Style-css-->
+    <link rel='stylesheet' href="css/style.css" />
+</head>
+
+<body>
+    <div id="hero">
+        <div id="drone-box">
+            <img src="images/drone.png">
+            <img src="images/drone-left.png">
+            <img src="images/drone-right.png">
+        </div>
+    </div>
+    <script>
+        var hero = document.getElementById("hero");
+        var droneBox = document.getElementById("drone-box");
+        hero.onmousemove = function(e) {
+            var moveX = (e.pageX * -1 / 2) + 300;
+            var moveY = (e.pageY * -1 / 3) + 120;
+            droneBox.style.transform = 'translate3d(' + moveX + 'px, ' + moveY + 'px,0)'
+        }
+
+    </script>
+</body>
+
+</html>
